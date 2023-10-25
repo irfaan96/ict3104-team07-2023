@@ -1,12 +1,12 @@
-pretrained_model_path: "./checkpoints/stable-diffusion-v1-4"
-output_dir: "output"
+pretrained_model_path: ./checkpoints/stable-diffusion-v1-4
+output_dir: output
 
 
 validation_data:
   prompts:
-    - "Iron man on the beach"
-    - "Stormtrooper on the sea"
-    - "Astronaut on the beach"
+    - Iron man on the beach
+    - Stormtrooper on the sea
+    - Astronaut on the beach
   video_length: 32
   width: 512
   height: 512
