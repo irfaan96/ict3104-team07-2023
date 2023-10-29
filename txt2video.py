@@ -146,7 +146,7 @@ def main(
     if resume_from_checkpoint:
         if resume_from_checkpoint != "latest":
             load_path = resume_from_checkpoint
-            output_dir = os.path.abspath(os.path.join(resume_from_checkpoint, ".."))
+            # output_dir = os.path.abspath(os.path.join(resume_from_checkpoint, ".."))
         accelerator.print(f"load from checkpoint {load_path}")
         accelerator.load_state(load_path)
 
