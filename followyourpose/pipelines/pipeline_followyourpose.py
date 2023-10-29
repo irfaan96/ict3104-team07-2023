@@ -31,6 +31,8 @@ from torchvision import transforms
 import torchvision.transforms._transforms_video as transforms_video
 import decord
 
+from tqdm import tqdm
+import time
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
 
@@ -380,7 +382,7 @@ class FollowYourPosePipeline(DiffusionPipeline):
         skeleton, save_skeleton = self.get_skeleton(skeleton_path, video_length, frame_skeleton_stride)
         skeleton = skeleton.to(latents.device).repeat(2,1,1,1,1)
         
-        with self.progress_bar(total=num_inference_steps) as progress_bar:
+        with tqdm(total=num_inference_steps, ncols=80, leave=True) as progress_bar:
             for i, t in enumerate(timesteps):
                 # expand the latents if we are doing classifier free guidance
                 latent_model_input = torch.cat([latents] * 2) if do_classifier_free_guidance else latents
