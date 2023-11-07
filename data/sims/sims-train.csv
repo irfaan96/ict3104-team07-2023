@@ -1,0 +1,8 @@
+id,subject,scene,quality,relevance,verified,script,objects,descriptions,actions,length
+3TV9E,WG9D,Kitchen,5,7,Yes,A person in the kitchen is sneezing while doing the dishes. The start smiling and drink a cup of coffee.,coffee;cup;dish;sink,"A person standing in a kitchen and sneezing while washing dishes, then the person picks up a cup of coffee and drinks.;A person is ding dishes they sneeze several times and then they drink their coffee.",c119 0.00 10.20;c153 2.00 7.40;c106 6.60 11.00;c110 3.10 8.70;c107 3.90 11.00;c118 0.00 9.50;c121 0.00 8.00;c120 0.40 9.90,10.12
+RB_S3K2_m5,S3,Kitchen2,0,0,Yes,nil,nil,nil,0,120
+GS_S8L2_m4,S8,Living2,0,0,Yes,nil,nil,nil,0,24
+GS_S8L2_m3,S8,Living2,0,0,Yes,nil,nil,nil,0,24
+UC_S8K2_fC20,S8,Kitchen2,0,0,Yes,nil,nil,nil,0,30
+UP_S8L1_m5,S8,Living1,0,0,Yes,nil,nil,nil,0,120
+UT_S3L2_m4,S3,Living2,0,0,Yes,nil,nil,nil,0,40
