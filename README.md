@@ -1,17 +1,16 @@
 <div align="center">
-<h2>Team 7</h2>
+<h1 align="center"><strong>ICT3104 Team 7</strong></h1>
+<h2><font color="red"> 🕺🕺🕺 Follow Your Pose 💃💃💃 </font><br>
+Pose-Guided Text-to-Video Generation using Pose-Free Videos</h2></div>
 
-<div align="center">
-<h2><font color="red"> 🕺🕺🕺 Follow Your Pose 💃💃💃 </font></center> <br> <center>Pose-Guided Text-to-Video Generation using Pose-Free Videos</h2>
+# Contributors
 
-[Yue Ma*](https://mayuelala.github.io/), [Yingqing He*](https://github.com/YingqingHe), [Xiaodong Cun](http://vinthony.github.io/), [Xintao Wang](https://xinntao.github.io/), [Ying Shan](https://scholar.google.com/citations?hl=zh-CN&user=4oXBp9UAAAAJ), [Xiu Li](https://scholar.google.com/citations?user=Xrh1OIUAAAAJ&hl=zh-CN), and [Qifeng Chen](https://cqf.io)
+[Zafrulla Kamil Bin Saleem](https://github.com/ZafrullaKamil) - [2100764](2100764@sit.singaporetech.edu.sg)<br>
+[Lee Yong Chong](https://github.com/2100711) - [2100711](2100711@sit.singaporetech.edu.sg)<br>
+[K M Irfaan Ahmed](https://github.com/irfaan96) - [2100701](2100701@sit.singaporetech.edu.sg)<br>
+[Sachin Agrawal](https://github.com/sachinagrawal19) - [2100805](2100805@sit.singaporetech.edu.sg)<br>
+[Chang Wee Siang Wilson](https://github.com/criss-xyriss) - [2101446](2101446@sit.singaporetech.edu.sg)
 
-<a href='https://arxiv.org/abs/2304.01186'><img src='https://img.shields.io/badge/ArXiv-2304.01186-red'></a> 
-<a href='https://follow-your-pose.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mayuelala/FollowYourPose/blob/main/quick_demo.ipynb) [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/YueMafighting/FollowYourPose) [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_app.svg)](https://openxlab.org.cn/apps/detail/houshaowei/FollowYourPose) ![visitors](https://visitor-badge.laobi.icu/badge?page_id=mayuelala.FollowYourPose&left_color=green&right_color=red)  [![GitHub](https://img.shields.io/github/stars/mayuelala/FollowYourPose?style=social)](https://github.com/mayuelala/FollowYourPose) 
-</div>
-
-
-<!-- ![fatezero_demo](./docs/teaser.png) -->
 
 <table class="center">
   <td><img src="gif_results/new_result_0830/a_man_in_the_park.gif"></td>
@@ -33,72 +32,113 @@
 </tr>
 </table >
 
-## 💃💃💃 Demo Video
+## Environment Setup
+We used `conda` in `Ubuntu` to setup the project environment.
 
+Follow this steps to setup the environment:
 
-
-https://github.com/mayuelala/FollowYourPose/assets/38033523/e021bce6-b9bd-474d-a35a-7ddff4ab8e75
-
-
-## 💃💃💃 Abstract
-<b>TL;DR: We tune the text-to-image model (e.g., stable diffusion) to generate the character videos from pose and text description.</b>
-
-<details><summary>CLICK for full abstract</summary>
-
-
-> Generating text-editable and pose-controllable character videos have an imperious demand in creating various digital human. Nevertheless, this task has been restricted by the absence of a comprehensive dataset featuring paired video-pose captions and the generative prior models for videos. In this work, we design a novel two-stage training scheme that can utilize easily obtained datasets (i.e., image pose pair and pose-free video) and the pre-trained text-to-image (T2I) model to obtain the pose-controllable character videos. Specifically, in the first stage, only the keypoint-image pairs are used only for a controllable textto-image generation. We learn a zero-initialized convolutional encoder to encode the pose information. In the second stage, we finetune the motion of the above network via a pose-free video dataset by adding the learnable temporal self-attention and reformed cross-frame self-attention blocks. Powered by our new designs, our method successfully generates continuously pose-controllable character videos while keeps the editing and concept composition ability of the pre-trained T2I model. The code and models will be made publicly available.
-</details>
-
-## 🕺🕺🕺 Changelog
-<!-- A new option store all the attentions in hard disk, which require less ram. -->
-- **[2023.08.30]** 🔥 Release some new results!
-- **[2023.07.06]** 🔥 Release A new version of `浦源内容平台 demo` [![浦源内容平台 Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20%E6%B5%A6%E6%BA%90%E5%86%85%E5%AE%B9%E5%B9%B3%E5%8F%B0-Spaces-blue)](https://openxlab.org.cn/apps/detail/houshaowei/FollowYourPose)! Thanks for the support of Shanghai AI Lab!
-- **[2023.04.12]** 🔥 Release local gradio demo and you could run it locally, only need a A100/3090. 
-- **[2023.04.11]** 🔥 Release some cases in `huggingface demo`. 
-- **[2023.04.10]** 🔥 Release A new version of `huggingface demo` [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/YueMafighting/FollowYourPose), which support both `raw video` and `skeleton video` as input. Enjoy it!
-- **[2023.04.07]** Release the first version of  `huggingface demo`. Enjoy the fun of following your pose! You need to download the [skeleton video](https://github.com/mayuelala/FollowYourPose/tree/main/pose_example) or make your own skeleton video by [mmpose](https://mmpose.readthedocs.io/en/latest/model_zoo_papers/backbones.html#hrnet-cvpr-2019).  Additionaly, the second version which regard the `video format` as input is comming.
-- **[2023.04.07]** Release a `colab notebook` [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mayuelala/FollowYourPose/blob/main/quick_demo.ipynb) and updata the `requirements` for installation!
-- **[2023.04.06]** Release `code`, `config` and `checkpoints`!
-- **[2023.04.03]** Release Paper and Project page!
-
-## 💃💃💃 HuggingFace Demo
-<table class="center">
-  <td><img src="https://user-images.githubusercontent.com/38033523/231338219-94b54b10-3fdc-4bf5-9e07-0c1ff236793a.png"></td>
-  <td><img src="https://user-images.githubusercontent.com/38033523/231337960-a30db639-2ecc-486f-8d95-3b3e9c2ed338.png"></td>
-</tr>
-</table>
-
-
-## 🎤🎤🎤 Todo
-
-- [X] Release the code, config and checkpoints for teaser
-- [X] Colab
-- [X] Hugging face gradio demo
-- [ ] Release more applications
-
-
-## 🍻🍻🍻 Setup Environment
-Our method is trained using cuda11, accelerator and xformers on 8 A100.
-``` 
-conda create -n fupose python=3.8
-conda activate fupose
-
-pip install -r requirements.txt
-``` 
-
-`xformers` is recommended for A100 GPU to save memory and running time. 
-
-<details><summary>Click for xformers installation </summary>
-
-We find its installation not stable. You may try the following wheel:
+1. Update system repositories.
 
 ```bash
-wget https://github.com/ShivamShrirao/xformers-wheels/releases/download/4c06c79/xformers-0.0.15.dev0+4c06c79.d20221201-cp38-cp38-linux_x86_64.whl
-pip install xformers-0.0.15.dev0+4c06c79.d20221201-cp38-cp38-linux_x86_64.whl
+sudo apt update
 ```
-</details>
 
-Our environment is similar to Tune-A-video ([official](https://github.com/showlab/Tune-A-Video), [unofficial](https://github.com/bryandlee/Tune-A-Video)). You may check them for more details.
+2. Install curl package.
+
+```bash
+sudo apt install curl -y
+```
+
+3. Prepare `Anaconda` installation script.
+
+```bash
+curl --output anaconda.sh https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
+
+sha256sum anaconda.sh
+```
+
+4. Install Anaconda.
+
+```bash
+bash anaconda.sh
+```
+> Note: Follow the instructions on the screen. You can press `Enter` to accept the defaults. Do not forget to say `yes` when the installer asks if you want to initialize `Anaconda3` by running `conda init`.
+
+6. Activate the installation.
+
+```bash
+source ~/.bashrc
+```
+
+7. Verify the installation.
+
+```bash
+conda list or conda --version
+```
+
+8. Create a new environment with the following command.
+
+```bash
+conda create -n fupose python=3.8
+```
+
+9. Activate the environment with the following command.
+
+```bash
+conda activate fupose
+```
+
+11. Clone this repository to your preferred location.
+
+```bash
+git clone https://github.com/irfaan96/ict3104-team07-2023.git
+```
+
+12. Install necessary packages.
+
+```bash
+pip install -U --pre triton
+
+pip install diffusers==0.11.1 torch==1.13.1 transformers==4.26.0 bitsandbytes==0.35.4 moviepy decord accelerate omegaconf einops ftfy gradio imageio-ffmpeg --extra-index-url https://download.pytorch.org/whl/cu113
+```
+
+13. Install project dependencies from `requirements.txt` in the root directory.
+
+```bash
+pip install -r requirements.txt
+```
+
+14. Installing `xformers`.
+
+```bash
+pip install https://github.com/brian6091/xformers-wheels/releases/download/0.0.15.dev0%2B4c06c79/xformers-0.0.15.dev0+4c06c79.d20221205-cp38-cp38-linux_x86_64.whl
+```
+
+15. Create a new folder `checkpoints` in the root directory.
+16. Configure Git LFS:
+
+```bash
+sudo apt install git-lfs
+git lfs install
+```
+
+17. Clone HuggingFace model repository:
+
+```bash
+git clone https://huggingface.co/YueMafighting/FollowYourPose_v1
+```
+
+18. Copy the contents of the cloned repository to the `checkpoints` folder
+
+```bash
+mv FollowYourPose_v1/* checkpoints/
+```
+
+19. Remove the cloned repository:
+
+```bash
+rm -rf FollowYourPose_v1
+```
 
 ## 💃💃💃 Training
 We fix the bug in Tune-a-video and finetune stable diffusion-1.4 on 8 A100.

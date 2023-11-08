@@ -28,4 +28,6 @@
 
 /newsd_weight
 
-/others
+/checkpoints
+
+.ipynb_checkpoints
