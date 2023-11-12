@@ -410,26 +410,5 @@ Please check our [Project Page](https://follow-your-pose.github.io/) for mp4 fil
 </table>
 <!--#########################################################-->
 
-
-
-
-## 🎼🎼🎼 Citation 
-If you think this project is helpful, please feel free to leave a star⭐️⭐️⭐️ and cite our paper:
-```bibtex
-@article{ma2023follow,
-  title={Follow Your Pose: Pose-Guided Text-to-Video Generation using Pose-Free Videos},
-  author={Ma, Yue and He, Yingqing and Cun, Xiaodong and Wang, Xintao and Shan, Ying and Li, Xiu and Chen, Qifeng},
-  journal={arXiv preprint arXiv:2304.01186},
-  year={2023}
-}
-``` 
-
-
 ## 👯👯👯 Acknowledgements
-
-This repository borrows heavily from [Tune-A-Video](https://github.com/showlab/Tune-A-Video) and [FateZero](https://github.com/ChenyangQiQi/FateZero). thanks the authors for sharing their code and models.
-
-## 🕺🕺🕺 Maintenance
-
-This is the codebase for our research work. We are still working hard to update this repo and more details are coming in days. If you have any questions or ideas to discuss, feel free to contact [Yue Ma](mailto:y-ma21@mails.tsinghua.edu.cn) or [Yingqing He](https://github.com/YingqingHe) or [Xiaodong Cun](mailto:vinthony@gmail.com).
-
+This repository borrows heavily from [Tune-A-Video](https://github.com/showlab/Tune-A-Video) and [FateZero](https://github.com/ChenyangQiQi/FateZero). Thanks the authors for sharing their code and models.
