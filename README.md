@@ -11,7 +11,7 @@
 | Chang Wee Siang Wilson   | [criss-xyriss](https://github.com/criss-xyriss) | 2101446 |
 
 ## Running on Google Colab
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](PASTE_YOUR_NOTEBOOK_URL_HERE)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([PASTE_YOUR_NOTEBOOK_URL_HERE](https://colab.research.google.com/drive/1u4Dji76mxlDq1r8BaiuSyLf7jpTTweF0?usp=sharing))
 
 ## Environment Setup
 We used `conda` in `Ubuntu` to setup the project environment.
